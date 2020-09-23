@@ -5,22 +5,20 @@
 
 header {
   background-color: #78a4cf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
 }
 
-h1 {
-  text-align: center;
-  padding: 32px;
+h1 a {
   color: #dce0de;
-  border-style: double;
-  border-width: 10px;
-  border-color: #5a7ab0;
-  font-size: 50px;
+  text-decoration: none;
 }
 
 nav {
-  padding: 4px;
+  padding-right: 32px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   font-size: 20px;
@@ -39,7 +37,7 @@ nav a:hover {
 }
 
 main p{
-  margin: 32px;
+  margin: 16px;
 }
 
 footer {
