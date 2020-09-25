@@ -4,55 +4,62 @@
 }
 
 header {
-  background-color: #78a4cf;
+  background-color: pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 1vw;
+  box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+  
 }
 
 .mainTitle {
-  color: #dce0de;
+  color: red;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bold;
 }
 
 nav {
-  padding-right: 32px;
+  padding-right: 1vw;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
 }
 
 .nava {
-  padding: 16px;
+  padding: 2vw;
   text-decoration: none;
-  color: #2f498e;
+  color: red;
 }
 
 .nava:hover {
-  background-color: #2f498e;
-  color: #78a4cf;
+  background-color: red;
+  color: pink;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  padding: 16px;
-  background-color: #78a4cf;
+  background-color: pink;
   list-style: none;
 }
 
 .dropdown-content a {
   text-decoration: none;
-  color: #2f498e;
+  color: red;
   padding: 32px;
+
 }
+
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 main {
@@ -64,14 +71,14 @@ p {
 }
 
 footer {
-  color: #2f498e;
+  color: red;
   padding: 16px;
-  background-color: #78a4cf;
+  background-color: pink;
 }
 
 #uppKnapp {
   padding: 5px 10px 0px 10px;
-  background-color: #78a4cf;
+  background-color: pink;
   font-size: 32px;
   position: fixed;
   bottom: 20px;
@@ -79,5 +86,5 @@ footer {
   z-index: 1;
   font-weight: bold;
   text-decoration: none;
-  color: #2f498e;
+  color: red;
 }
