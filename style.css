@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1vw;
-  box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   
 }
 
@@ -18,6 +18,7 @@ header {
   text-decoration: none;
   font-size: 34px;
   font-weight: bold;
+  font-family: 'Rock Salt', cursive;
 }
 
 nav {
@@ -25,8 +26,9 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .nava {
@@ -45,35 +47,76 @@ nav {
   position: absolute;
   background-color: pink;
   list-style: none;
+  padding: 2vw;
 }
 
 .dropdown-content a {
   text-decoration: none;
   color: red;
-  padding: 32px;
+  padding: 29px;
+}
 
+.dropdown-content a:hover {
+  text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-main {
+p { 
   margin: 16px;
+  font-family: 'IBM Plex Serif', serif;
 }
 
-p {
+h2 {
+  color: pink;
+  font-size: 70px;
+  text-shadow: 3px 3px 0px #FF0000;
+  margin: 4vw;
+  font-family: 'Rock Salt', cursive;
+
+}
+
+h3 {
+  color: red;
+  font-size: 40px;
+  background-color: pink;
+  margin-bottom: 30px;
+  padding: 5px;
+  padding-left: 5vw;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bookBoxContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bookBox {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: red;
+  padding: 10px;
   margin-bottom: 16px;
 }
 
-footer {
-  color: red;
-  padding: 16px;
+.bookBoxText {
   background-color: pink;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.bookBoxImg {
+  padding: 5px;
+  background-color: red;
 }
 
 #uppKnapp {
@@ -87,4 +130,10 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: red;
+}
+
+footer {
+  color: red;
+  padding: 24px;
+  background-color: pink;
 }
