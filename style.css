@@ -50,7 +50,6 @@ nav {
   list-style: none;
   padding: 2vw;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .dropdown-content a {
@@ -174,6 +173,18 @@ article p {
   margin-left: 46px;
 }
 
+h4 {
+  margin-left: 4vw;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 24px;
+  color: red;
+}
+
+.book-list li a{
+  margin: 32px;
+  font-family: "IBM Plex Serif", serif;
+  color: black;
+}
 
 #uppKnapp {
   padding: 5px 10px 0px 10px;
