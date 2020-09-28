@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 header {
@@ -8,18 +10,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vw;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .mainTitle {
   color: red;
   background-color: pink;
-  text-decoration: none;
   font-size: 50px;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   z-index: 1;
+  padding: 2vw;
 }
 
 nav {
@@ -32,13 +33,12 @@ nav {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.nava {
+.nav-a {
   padding: 2vw;
-  text-decoration: none;
   color: red;
 }
 
-.nava:hover {
+.nav-a:hover {
   background-color: red;
   color: pink;
 }
@@ -49,10 +49,11 @@ nav {
   background-color: pink;
   list-style: none;
   padding: 2vw;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .dropdown-content a {
-  text-decoration: none;
   color: red;
   padding: 29px;
 }
@@ -61,11 +62,10 @@ nav {
   text-decoration: underline;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-container:hover .dropdown-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -75,9 +75,9 @@ p {
 
 h2 {
   color: pink;
-  font-size: 70px;
+  font-size: 130px;
   text-shadow: 3px 3px 0px #ff0000;
-  margin: 3.9vw;
+  margin: 4vw;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -86,6 +86,7 @@ h3 {
   font-size: 40px;
   background-color: pink;
   margin-bottom: 30px;
+  margin-top: 46px;
   padding: 5px;
   padding-left: 5vw;
   font-family: "Source Sans Pro", sans-serif;
@@ -119,20 +120,11 @@ figure img {
   background-color: red;
 }
 
-.books {
+.allbooks {
   margin-left: 228px;
 }
 
-.flex-c {
-  display: flex;
-  align-items: flex-end;
-}
-
-.flex {
-  display: flex;
-}
-
-.list {
+.nav-list {
   background-color: pink;
   position: fixed;
   top: 0;
@@ -141,18 +133,47 @@ figure img {
   padding: 10px;
 }
 
-.list li {
+.nav-list li {
   margin: 16px;
   margin-bottom: 27px;
 }
 
-.flex-c img {
-  margin: 16px;
+.nav-list a {
+  color: red;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
 }
 
-.flex-c table {
-  margin: 16px;
+.article {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
+
+article a {
+  margin: 16px;
+  margin-left: 46px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article img {
+  margin: 16px;
+  margin-left: 46px;
+}
+
+article table {
+  border-spacing: 16px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+article p {
+  margin-left: 46px;
+}
+
 
 #uppKnapp {
   padding: 5px 10px 0px 10px;
@@ -168,6 +189,7 @@ figure img {
 }
 
 footer {
+  margin-top: 32px;
   color: red;
   padding: 24px;
   background-color: pink;
