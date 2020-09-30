@@ -3,58 +3,60 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
 }
 
 header {
-  background-color: pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #506078;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.mainTitle {
-  color: red;
-  background-color: pink;
+#main-title {
+  color: whitesmoke;
+  background-color: #506078;
+  padding: 2vw;
   font-size: 50px;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   z-index: 1;
-  padding: 2vw;
 }
 
 nav {
-  padding-right: 1vw;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-right: 1vw;
   font-size: 36px;
   font-weight: bold;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .nav-a {
   padding: 2vw;
-  color: red;
+  color: whitesmoke;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .nav-a:hover {
-  background-color: red;
-  color: pink;
+  background-color: whitesmoke;
+  color: #506078;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: pink;
-  list-style: none;
   padding: 2vw;
+  background-color: #506078;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  list-style: none;
 }
 
 .dropdown-content a {
-  color: red;
   padding: 29px;
+  color: whitesmoke;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .dropdown-content a:hover {
@@ -69,26 +71,31 @@ nav {
 
 p {
   margin: 16px;
-  font-family: "IBM Plex Serif", serif;
 }
 
 h2 {
-  color: pink;
-  font-size: 130px;
-  text-shadow: 3px 3px 0px #ff0000;
   margin: 4vw;
+  color: #506078;
+  text-shadow: 3px 3px 0px #9da0aa;
+  font-size: 105px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 h3 {
-  color: red;
+  color: whitesmoke;
   font-size: 40px;
-  background-color: pink;
+  background-color: #506078;
   margin-bottom: 30px;
   margin-top: 46px;
   padding: 5px;
   padding-left: 5vw;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+h4 {
+  margin-left: 4vw;
+  font-size: 24px;
+  color: #9da0aa;
 }
 
 .figure-container {
@@ -99,14 +106,14 @@ h3 {
 
 figure {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  background-color: red;
+  background-color: #506078;
   padding: 10px;
   margin-bottom: 16px;
 }
 
 figcaption {
-  background-color: pink;
-  color: red;
+  background-color: #9da0aa;
+  color: whitesmoke;
   text-align: center;
   font-weight: bold;
   padding: 16px;
@@ -116,7 +123,8 @@ figcaption {
 
 figure img {
   padding: 5px;
-  background-color: red;
+  background-color: #506078;
+  height: 300px;
 }
 
 .allbooks {
@@ -124,7 +132,7 @@ figure img {
 }
 
 .nav-list {
-  background-color: pink;
+  background-color: #506078;
   position: fixed;
   top: 0;
   left: 0;
@@ -138,7 +146,7 @@ figure img {
 }
 
 .nav-list a {
-  color: red;
+  color: #9da0aa;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
@@ -149,58 +157,57 @@ figure img {
   flex-wrap: wrap;
 }
 
-article a {
+article a,
+article img,
+article p {
   margin: 16px;
   margin-left: 46px;
-  font-family: "IBM Plex Serif", serif;
+}
+
+article img {
+  width: 175px
+}
+
+article a {
+  color: #506078;
 }
 
 article a:hover {
   text-decoration: underline;
 }
 
-article img {
-  margin: 16px;
-  margin-left: 46px;
-}
-
 article table {
   border-spacing: 16px;
-  font-family: "IBM Plex Serif", serif;
 }
 
-article p {
-  margin-left: 46px;
-}
-
-h4 {
-  margin-left: 4vw;
-  font-family: "IBM Plex Serif", serif;
-  font-size: 24px;
-  color: red;
-}
-
-.book-list li a{
+.book-list li {
   margin: 32px;
-  font-family: "IBM Plex Serif", serif;
+}
+
+.book-list a {
   color: black;
 }
 
-#uppKnapp {
+.book-list p {
+  font-weight: bold;
+}
+
+#top-btn {
   padding: 5px 10px 0px 10px;
-  background-color: pink;
+  background-color: #506078;
   font-size: 32px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1;
   font-weight: bold;
-  color: red;
+  color: whitesmoke; 
 }
 
 footer {
+  text-align: center;
   margin-top: 32px;
-  color: red;
+  color: whitesmoke;
   padding: 24px;
-  background-color: pink;
+  background-color: #506078;
 }
