@@ -16,9 +16,9 @@ header {
 }
 
 #main-title {
+  padding: 2vw;
   color: whitesmoke;
   background-color: #506078;
-  padding: 2vw;
   font-size: 320%;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
@@ -41,8 +41,8 @@ nav {
 }
 
 .nav-a:hover {
-  background-color: whitesmoke;
   color: #506078;
+  background-color: whitesmoke;
 }
 
 .dropdown-content {
@@ -60,14 +60,14 @@ nav {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.dropdown-content a:hover {
-  text-decoration: underline;
-}
-
 .dropdown-container:hover .dropdown-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.dropdown-content a:hover, article a:hover, .book-list a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -89,20 +89,20 @@ h2 {
 }
 
 h3 {
-  color: whitesmoke;
-  font-size: 40px;
-  background-color: #506078;
   margin-bottom: 3vw; 
   margin-top: 3.5vw; 
   padding: 5px;
   padding-left: 5vw;
+  color: whitesmoke;
+  background-color: #506078;
+  font-size: 40px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 h4 {
   margin-left: 4vw;
-  font-size: 24px;
   color: #9da0aa;
+  font-size: 24px;
 }
 
 .figure-container {
@@ -112,26 +112,30 @@ h4 {
 }
 
 figure {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  background-color: #506078;
-  padding: 10px;
   margin-bottom: 16px;
+  padding: 10px;
+  background-color: #506078;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
-  background-color: #9da0aa;
-  color: whitesmoke;
   text-align: center;
-  font-weight: bold;
   padding: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  color: whitesmoke;
+  background-color: #9da0aa;
   font-size: 18px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 figure img {
   padding: 5px;
-  background-color: #506078;
   height: 300px; 
+  background-color: #506078;
+}
+
+a img  {
+  width: 100%;
 }
 
 .allbooks {
@@ -139,12 +143,11 @@ figure img {
 }
 
 .nav-list {
-  background-color: #506078;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
   padding: 10px;
+  background-color: #506078;
 }
 
 .nav-list li {
@@ -154,14 +157,14 @@ figure img {
 
 .nav-list a {
   color: #9da0aa;
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .article {
   display: flex;
-  align-items: flex-end;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 article a,
@@ -177,10 +180,6 @@ article img {
 
 article a {
   color: #506078;
-}
-
-article a:hover {
-  text-decoration: underline;
 }
 
 article table {
@@ -200,21 +199,21 @@ article table {
 }
 
 #top-btn {
-  padding: 5px 10px 0px 10px;
-  background-color: #506078;
-  font-size: 32px;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1;
+  padding: 5px 10px 0px 10px;
+  font-size: 32px;
   font-weight: bold;
   color: whitesmoke;
+  background-color: #506078;
+  z-index: 1;
 }
 
 footer {
   text-align: center;
   margin-top: 32px;
-  color: whitesmoke;
   padding: 16px;
+  color: whitesmoke;
   background-color: #506078;
 }
