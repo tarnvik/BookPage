@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #506078;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -18,7 +19,7 @@ header {
   color: whitesmoke;
   background-color: #506078;
   padding: 2vw;
-  font-size: 50px;
+  font-size: 320%;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   z-index: 1;
@@ -29,7 +30,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding-right: 1vw;
-  font-size: 36px;
+  font-size: 250%; 
   font-weight: bold;
 }
 
@@ -54,7 +55,7 @@ nav {
 }
 
 .dropdown-content a {
-  padding: 29px;
+  padding: 3vw;
   color: whitesmoke;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -77,16 +78,22 @@ h2 {
   margin: 4vw;
   color: #506078;
   text-shadow: 3px 3px 0px #9da0aa;
-  font-size: 105px;
+  font-size: 650%;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  h2{
+    font-size: 20vw;
+  }
 }
 
 h3 {
   color: whitesmoke;
   font-size: 40px;
   background-color: #506078;
-  margin-bottom: 30px;
-  margin-top: 46px;
+  margin-bottom: 3vw; 
+  margin-top: 3.5vw; 
   padding: 5px;
   padding-left: 5vw;
   font-family: "Source Sans Pro", sans-serif;
@@ -124,7 +131,7 @@ figcaption {
 figure img {
   padding: 5px;
   background-color: #506078;
-  height: 300px;
+  height: 300px; 
 }
 
 .allbooks {
@@ -165,7 +172,7 @@ article p {
 }
 
 article img {
-  width: 175px
+  width: 175px;
 }
 
 article a {
@@ -201,13 +208,13 @@ article table {
   right: 20px;
   z-index: 1;
   font-weight: bold;
-  color: whitesmoke; 
+  color: whitesmoke;
 }
 
 footer {
   text-align: center;
   margin-top: 32px;
   color: whitesmoke;
-  padding: 24px;
+  padding: 16px;
   background-color: #506078;
 }
